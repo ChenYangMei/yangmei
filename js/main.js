@@ -1,7 +1,28 @@
-var s;
+    var s;
 $(document).ready(function(){
 
   s = skrollr.init();
+  skrollr.menu.init(s, {
+    //skrollr will smoothly animate to the new position using `animateTo`.
+    animate: true,
+
+    //The easing function to use.
+    easing: 'sqrt',
+
+    //Multiply your data-[offset] values so they match those set in skrollr.init
+    scale: 2,
+
+    //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+    //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+    // handleLink: function(link) {
+    //     return 600;
+    // },
+
+    complexLinks: false,
+
+    //Add hash link (e.g. `#foo`) to URL or not.
+    updateUrl: false //defaults to `true`.
+  });
 
   var firstPath = $("#svg_1").get(0);
   var firstPathLength = firstPath.getTotalLength();
