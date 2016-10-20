@@ -126,17 +126,17 @@ $(document).ready(function(){
   $(".down").delay(5000).fadeIn("slow");
   $(".right").delay(4000).fadeIn("slow");
 
-  // $(".down").on("click", function(){
-  //   $("html,body").animate({
-  //     scrollTop: $(".intro").offset().top
-  //   }, 3000);
-  // });
+  $(".down").on("click", function(){
+    $("html,body").animate({
+      scrollTop: $(".intro").offset().top
+    }, 3000);
+  });
 
-  // $(".right").on("click", function(){
-  //   $(".slides_container").css({
-  //     "-webkit-transform":"translate(-50%,0%)",
-  //     transition: "transform 1s"
-  //   });
-  // });
+  $(".right").on("click", function(){
+    $(".slides_container").css({
+      "-webkit-transform":"translate(-50%,0%)",
+      transition: "transform 1s"
+    });
+  });
 
 });

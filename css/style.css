@@ -176,7 +176,7 @@ svg {
   border: 2px white solid;
 }
 
-/*.right{
+.right{
   position: absolute;
   top: 49%;
   right: 2%;
@@ -184,7 +184,7 @@ svg {
 
 .right i{
   font-size: 2em;
-}*/
+}
 
 #projects{
   width: 60%;
