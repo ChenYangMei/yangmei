@@ -1,4 +1,4 @@
-    var s;
+var s;
 $(document).ready(function(){
 
   s = skrollr.init();
@@ -11,12 +11,6 @@ $(document).ready(function(){
 
     //Multiply your data-[offset] values so they match those set in skrollr.init
     scale: 2,
-
-    //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
-    //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
-    // handleLink: function(link) {
-    //     return 600;
-    // },
 
     complexLinks: false,
 
@@ -158,6 +152,25 @@ $(document).ready(function(){
       "-webkit-transform":"translate(-50%,0%)",
       transition: "transform 1s"
     });
+  });
+
+  $(".menu_two").hide();
+
+  $("#icon").on("click", function(){
+    $(".menu_two").slideToggle();
+  });
+
+  $("#menu_home").on("click", function(){
+    $(".menu_two").fadeOut();
+  });
+  $("#menu_contact").on("click", function(){
+    $(".menu_two").fadeOut();
+  });
+  $("#menu_about").on("click", function(){
+    $(".menu_two").fadeOut();
+  });
+  $("#menu_projects").on("click", function(){
+    $(".menu_two").fadeOut();
   });
 
 });

@@ -17,12 +17,21 @@
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-  <nav>
-    <ul>
+  <nav class="topnav">
+    <ul class="icon">
+      <li id="icon">&#9776;</li>
+    </ul>
+    <ul class="menu_one">
       <li><a href="#slide_1" data-menu-top="0">Home</a></li>
       <li><a href="#slide_2" data-menu-top="605">Contact</a></li>
       <li><a href="#slide_3" data-menu-top="1210">About</a></li>
       <li><a href="#slide_4" data-menu-top="1815">Projects</a></li>
+    </ul>
+    <ul class="menu_two">
+      <li id="menu_home"><a href="#slide_1" data-menu-top="0">Home</a></li>
+      <li id="menu_contact"><a href="#slide_2" data-menu-top="605">Contact</a></li>
+      <li id="menu_about"><a href="#slide_3" data-menu-top="1210">About</a></li>
+      <li id="menu_projects"><a href="#slide_4" data-menu-top="1815">Projects</a></li>
     </ul>
   </nav>
 
@@ -62,19 +71,31 @@
            </g>
           </svg>
         </div>
-        <!-- <div class="right">
-          <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-        </div> -->
       </div>
 
 
       <div class="slide" id="slide_2">
-        <div id="head">
-          <p>
-            <img src="img/yangmei_circle.png" alt="" />
-            <span>Hi, I'm Yangmei, a full stack developer.</span>
-          </p>
+        <div class="head">
+          <div id="profile">
+            <p>
+              <img src="img/yangmei_circle.png" alt="" />
+              <span>Hi, I'm Yangmei, a full stack web developer.</span>
+            </p>
+          </div>
+
+          <div class="contact_icon">
+            <a href="https://github.com/gingernutter" target="_blank"><img src="img/github.png" alt="" /></a>
+            <a href="https://www.linkedin.com/in/chenyangmei" target="_blank"><img src="img/linkedin.png" alt="" /></a>
+            <a href="https://twitter.com/chenyangmei" target="_blank"><img src="img/twitter.png" alt="" /></a>
+          </div>
+
+          <div class="contact_details">
+            <p>
+              yangmei.chen2011@gmail.com
+            </p>
+          </div>
         </div>
+
       </div>
 
 
@@ -101,19 +122,38 @@
         <div id="projects">
 
           <div class="project" id="project_zero">
-            <a href="https://gingernutter.github.io/wdi16_project_zero_tictactoe/" target="_blank"><img src="img/tictactoe.png" alt="" /></a>
+            <a href="http://gingernutter.github.io/unit_9/index.html" target="_blank"><img src="img/teahouse.png" alt="" /></a>
+
+            <div class="github">
+              <a href="#"><img src="img/github.png" alt="" /></a>
+            </div>
+
           </div>
 
           <div class="project" id="project_one">
-            <a href="https://why-i-deserve-icecream.herokuapp.com/" target="_blank"><img src="img/icecream.png" alt="" /></a>
+            <a href="https://gingernutter.github.io/wdi16_project_zero_tictactoe/" target="_blank"><img src="img/tictactoe.png" alt="" /></a>
+
+            <div class="github">
+              <a href="#"><img src="img/github.png" alt="" /></a>
+            </div>
+
           </div>
 
           <div class="project" id="project_two">
-            <a href="https://casual-hire.herokuapp.com/" target="_blank"><img src="img/hire.png" alt="" /></a>
+            <a href="https://why-i-deserve-icecream.herokuapp.com/" target="_blank"><img src="img/icecream.png" alt="" /></a>
+
+            <div class="github">
+              <a href="#"><img src="img/github.png" alt="" /></a>
+            </div>
           </div>
 
           <div class="project" id="project_three">
             <a href="https://dogslife.herokuapp.com/" target="_blank"><img src="img/dog.png" alt="" /></a>
+
+            <div class="github">
+              <a href="#"><img src="img/github.png" alt="" /></a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -129,10 +169,6 @@
     <div class="marker yellow"></div>
   </div>
 
-
-  <!-- <div class="down">
-    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-  </div> -->
 
 </body>
 

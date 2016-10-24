@@ -31,6 +31,13 @@ nav a{
   padding: 1em 3em;
 }
 
+nav .icon{
+  display: none;
+}
+
+.menu_two{
+  display: none;
+}
 
 main{
   width: 100%;
@@ -99,9 +106,11 @@ main{
 }
 
 #yangmei {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
   width: 80%;
-  height: 100%;
   margin: 0 auto;
 }
 
@@ -121,7 +130,7 @@ svg {
   opacity: 0;
 }
 
-#head {
+.head {
   transform: translateY(-50%);
   top: 50%;
   text-align: center;
@@ -130,19 +139,23 @@ svg {
   color: black;
 }
 
-#head img{
+#profile img{
   width: 20%;
   vertical-align: middle;
-  padding-right: 1em;
 }
 
-/*#about{
-  width: 50%;
-  margin: 0 auto;
-  position: relative;
-  transform: translateY(-50%);
-  top: 50%;
-}*/
+#profile span{
+  padding: 0 1em;
+}
+
+.contact_icon img{
+  width: 30px;
+  margin: 2em 1em;
+}
+
+.contact_details{
+  font-size: .8em;
+}
 
 .introduction{
   width: 80%;
@@ -189,16 +202,16 @@ svg {
 
 #projects{
   width: 60%;
-  margin: 3em auto;
+  margin: 2.5em auto;
   position: relative;
   transform: translateY(-50%);
   top: 50%;
 }
 
 .project{
-  width: 49%;
+  width: 49.5%;
   display: inline-block;
-  padding: 1.5em;
+  padding: 0.5em 1em;
 }
 
 .project img{
@@ -209,6 +222,20 @@ svg {
   border-radius: 5%;
 }
 
+.project img:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.github{
+  text-align: center;
+  margin-top: .3em;
+}
+
+.github img{
+  width: 30px;
+  border: none;
+}
 
 
 @media (max-width: 800px) {
@@ -217,18 +244,14 @@ svg {
     padding: 0 3em;
   }
 
-  #yangmei{
-    padding-top: 30%;
-  }
-
-  #head img{
+  #profile img{
     width: 30%;
     display: block;
     margin: 0 auto;
     margin-bottom: 4em;
   }
 
-  #head span{
+  #profile span{
     display: block;
   }
 
@@ -244,4 +267,94 @@ svg {
     width: 100%;
     margin: 0 auto;
   }
+
+  #projects{
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 680px){
+  nav{
+    padding: 0;
+    margin: 0;
+    background-color: #325066;
+  }
+
+  #menu_projects{
+    padding-bottom: 1em;
+  }
+
+  nav .icon{
+    display: block;
+    font-size: 1.5em;
+    text-align: left;
+    color: ghostwhite;
+  }
+
+  nav .icon:hover{
+    cursor: pointer;
+  }
+
+  nav li{
+    display: block;
+    padding: .5em 0;
+    text-align: left;
+  }
+
+  nav a{
+    padding: 0;
+  }
+
+  .menu_two{
+    display: block;
+  }
+
+  .menu_one{
+    display: none;
+  }
+
+}
+
+@media (max-width: 500px){
+
+
+  #profile img{
+    width: 50%;
+    display: block;
+    margin: 1em auto;
+  }
+
+  #profile span{
+    display: block;
+    font-size: .7em;
+  }
+
+  .contact_details{
+    font-size: .5em;
+  }
+
+  .gingeroreo{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  #about{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 0;
+    font-size: .8em;
+  }
+
+  #projects{
+    width: 100%;
+  }
+
+  .project{
+    width: 49%;
+  }
+
 }
