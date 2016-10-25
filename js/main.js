@@ -1,6 +1,7 @@
 var s;
 $(document).ready(function(){
 
+
   s = skrollr.init();
   skrollr.menu.init(s, {
     //skrollr will smoothly animate to the new position using `animateTo`.
@@ -17,6 +18,8 @@ $(document).ready(function(){
     //Add hash link (e.g. `#foo`) to URL or not.
     updateUrl: false //defaults to `true`.
   });
+
+  $('[title]').removeAttr('title');
 
   var firstPath = $("#svg_1").get(0);
   var firstPathLength = firstPath.getTotalLength();
